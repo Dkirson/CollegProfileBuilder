@@ -60,10 +60,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgz-V5-YL9">
-                                <rect key="frame" x="164" y="344" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="46y-0F-SZX"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="72" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="onTappedSaveButton:" destination="JEX-9P-axG" eventType="touchUpInside" id="mbT-a1-bQc"/>
@@ -72,21 +69,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f3Z-od-r3a" firstAttribute="leading" secondItem="LWF-xc-nDI" secondAttribute="leading" id="23X-20-jg5"/>
-                            <constraint firstItem="LWF-xc-nDI" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="4ZX-86-gKY"/>
-                            <constraint firstItem="f3Z-od-r3a" firstAttribute="top" secondItem="SZK-Lk-s4g" secondAttribute="bottom" constant="8" symbolic="YES" id="70f-12-une"/>
-                            <constraint firstItem="LWF-xc-nDI" firstAttribute="top" secondItem="f3Z-od-r3a" secondAttribute="bottom" constant="8" symbolic="YES" id="IbT-do-dfm"/>
-                            <constraint firstItem="hgz-V5-YL9" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="LIp-Ac-DKn"/>
-                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="96" id="QxU-7u-b3R"/>
-                            <constraint firstItem="6eK-vu-lKW" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="46" id="SFh-V2-CI7"/>
-                            <constraint firstItem="6eK-vu-lKW" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="Sug-5W-0kc"/>
-                            <constraint firstItem="6eK-vu-lKW" firstAttribute="top" secondItem="LWF-xc-nDI" secondAttribute="bottom" constant="8" symbolic="YES" id="Tem-Xe-mU9"/>
-                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="U6L-fg-gfn"/>
-                            <constraint firstItem="f3Z-od-r3a" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="Uif-Ge-Mg9"/>
-                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="leading" secondItem="f3Z-od-r3a" secondAttribute="leading" id="aZf-El-wml"/>
-                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" symbolic="YES" id="amN-D3-30w"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="hgz-V5-YL9" secondAttribute="bottom" constant="293" id="g6N-io-4yO"/>
-                            <constraint firstItem="hgz-V5-YL9" firstAttribute="top" secondItem="6eK-vu-lKW" secondAttribute="bottom" constant="8" symbolic="YES" id="vDg-gc-z5C"/>
+                            <constraint firstItem="LWF-xc-nDI" firstAttribute="top" secondItem="f3Z-od-r3a" secondAttribute="bottom" constant="8" symbolic="YES" id="1c3-lG-qlE"/>
+                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="2Be-cz-SUU"/>
+                            <constraint firstItem="6eK-vu-lKW" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="2Q5-KZ-FRI"/>
+                            <constraint firstItem="hgz-V5-YL9" firstAttribute="top" secondItem="SZK-Lk-s4g" secondAttribute="top" id="2Qa-53-VXz"/>
+                            <constraint firstItem="6eK-vu-lKW" firstAttribute="top" secondItem="LWF-xc-nDI" secondAttribute="bottom" constant="8" symbolic="YES" id="96n-Tb-XHC"/>
+                            <constraint firstItem="f3Z-od-r3a" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="96" id="Aqk-bL-Eqm"/>
+                            <constraint firstItem="hgz-V5-YL9" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="ONc-BY-tpO"/>
+                            <constraint firstItem="f3Z-od-r3a" firstAttribute="top" secondItem="SZK-Lk-s4g" secondAttribute="bottom" constant="8" symbolic="YES" id="Ojt-Ct-OwO"/>
+                            <constraint firstItem="f3Z-od-r3a" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="VFv-DX-rf2"/>
+                            <constraint firstItem="SZK-Lk-s4g" firstAttribute="leading" secondItem="f3Z-od-r3a" secondAttribute="leading" id="cWh-74-t0W"/>
+                            <constraint firstItem="f3Z-od-r3a" firstAttribute="leading" secondItem="LWF-xc-nDI" secondAttribute="leading" id="cbk-Vg-VkA"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="6eK-vu-lKW" secondAttribute="bottom" constant="331" id="lSZ-a6-w8N"/>
+                            <constraint firstItem="hgz-V5-YL9" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" symbolic="YES" id="pm3-Rj-Sv2"/>
+                            <constraint firstItem="6eK-vu-lKW" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="46" id="uTf-a0-G0J"/>
+                            <constraint firstItem="LWF-xc-nDI" firstAttribute="centerX" secondItem="SZK-Lk-s4g" secondAttribute="centerX" id="zwf-Km-z0b"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

@@ -22,9 +22,7 @@ class DetailViewController: UIViewController {
             college.image = UIImagePNGRepresentation(imageView.image!)!
         }
         
-
     }
-    
     
     
     var detailItem: College? {
