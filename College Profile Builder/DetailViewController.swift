@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import SafariServices
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, SFSafariViewControllerDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var enrollmentTextField: UITextField!
+    @IBOutlet weak var urlTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    @IBAction func onTappedGoButton(_ sender: UIButton){
+        let url = NSURL(string: urlTextField.text!)!
+        let svc = SFSafariViewController(url: url as URL)
+        present(svc, animated: true, completion: nil)
+        
+    }
     @IBAction func onTappedSaveButton(_ sender: Any) {
         if let college = self.detailItem {
             college.name = nameTextField.text!
             college.location = locationTextField.text!
             college.enrollment = Int(enrollmentTextField.text!)!
+            college.webAddress = urlTextField.text!
             college.image = UIImagePNGRepresentation(imageView.image!)!
         }
         
@@ -50,6 +59,7 @@ class DetailViewController: UIViewController {
                 nameTextField.text = college.name
                 locationTextField.text = college.location
                 enrollmentTextField.text = String(college.enrollment)
+                urlTextField.text = "https://" + college.webAddress
                 imageView.image = UIImage(data: college.image)
             }
         }
